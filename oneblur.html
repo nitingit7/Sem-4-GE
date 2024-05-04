@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title>On blur event listener</title>
+    </head>
+    <body>
+        <h2>On blurr Example</h2>
+        <p>when click on the input field, it changes the color</p>
+        <p>when cursor goes away from the input field then the color restored</p>
+
+        <form id = "myform">
+            <input type="text" id = "myinput">
+        </form>
+
+        <script>
+            let x = document.getElementById('myform');
+            x.addEventListener('focus', myFocusFunction, true);
+            x.addEventListener('blur', myBlurFunction, true);
+
+            function myFocusFunction(){
+                document.getElementById("myinput").style.backgroundColor = 'grey';
+            }
+
+            function myBlurFunction(){
+                document.getElementById("myinput").style.backgroundColor = '';
+            }
+        </script>
+    </body>
+</html>

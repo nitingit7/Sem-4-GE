@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ondblick example</title>
+</head>
+<body>
+    <p ondblclick = "myFunction()">Double click the paragrah and see the magic</p>
+    <p id = 'demo'></p>
+    <script>
+        function myFunction(){
+            document.getElementById('demo').innerHTML += "  Hello World  ";
+        }
+    </script>
+    
+</body>
+</html>

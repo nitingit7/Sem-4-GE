@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseout Example</title>
+    <style>
+        #demo {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "demo">
+        <img onmouseover="bigimage(this)" onmouseout="smallimage(this)" src="smile emoji.jpg" alt="smile emoji"  height = "64px" width = "64px">
+    </div>
+
+    <script>
+        function bigimage(x){
+            x.style.height = "138px";
+            x.style.width = "138px";
+        } 
+
+        function smallimage(x){
+            x.style.height = "64px";
+            x.style.width = "64px";
+        }
+    </script>
+</body>
+</html>
