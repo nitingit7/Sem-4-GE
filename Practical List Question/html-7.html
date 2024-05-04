@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="#" method="POST" onsubmit="return validateform()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="interest1" name="interests" value="music">
+        <label for="interest1">Music</label><br>
+        <input type="checkbox" id="interest2" name="interests" value="sports">
+        <label for="interest2">Sports</label><br>
+        <input type="checkbox" id="interest3" name="interests" value="reading">
+        <label for="interest3">Reading</label><br><br>
+
+        <label>Education Level:</label><br>
+        <input type="radio" id="education1" name="education" value="high_school">
+        <label for="education1">High School</label><br>
+        <input type="radio" id="education2" name="education" value="undergraduate">
+        <label for="education2">Undergraduate</label><br>
+        <input type="radio" id="education3" name="education" value="postgraduate">
+        <label for="education3">Postgraduate</label><br><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateform(){
+            var phone = document.getElementById("phone").value;
+            if ((phone.lenght !== 10) && !(/^\d+$/.test(phone))){
+                alert("enter vald phone number");
+                return false;
+            }
+            else{
+                alert("form submitted");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
