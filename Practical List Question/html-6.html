@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags Example</title>
+    <style>
+        /* Styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, section, footer, figure {
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        footer {
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between; /* Adjust as needed */
+        }
+        nav ul li {
+            display: inline-block;
+            margin: auto;
+        }
+        nav ul li a {
+            font-size: large;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        nav ul li a:hover {
+            background-color: #e0e0e0;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        figure img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        figcaption {
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>We are a creative team dedicated to building amazing websites.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+                <li>Web Design</li>
+                <li>Web Development</li>
+              <ul>
+              <li>SEO Optimization</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Work</h2>
+            <figure>
+                <img src="example.jpg" alt="Example Image">
+                <figcaption>Website design project</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

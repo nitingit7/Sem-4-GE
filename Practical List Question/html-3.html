@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in Webpages</title>
+    <style>
+        /* CSS for table background image */
+        .image-table {
+            background-image: url('../table-background.jpeg');
+            background-size: cover;
+            padding: 20px;
+            color: white;
+        }
+
+        /* CSS for clickable icons */
+        .clickable-icon {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Image as a logo -->
+    <img src="logo.png" alt="Logo" width="200" height="100">
+
+    <!-- Image in cell data of a table -->
+    <table border="1">
+        <tr>
+            <td><img src="image1.jpg" alt="Image 1" width="100" height="100"></td>
+            <td><img src="image2.jpg" alt="Image 2" width="100" height="100"></td>
+        </tr>
+    </table>
+
+    <!-- Table with background image -->
+    <table class="image-table" border="1">
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+
+    <!-- Clickable icon -->
+    <img src="icon.png" alt="Icon" class="clickable-icon" onclick="alert('You clicked the icon!')" width="50" height="50">
+</body>
+</html>
