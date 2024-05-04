@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color on Focus</title>
+</head>
+<body>
+    <button id="myTextbox" onclick="myFunction()">Change Button</button>
+
+    <script>
+        let x = 2;
+        function myFunction(){
+            if (x % 2 === 0){
+                document.body.style.backgroundColor = 'red';
+            } else {
+                document.body.style.backgroundColor = '';
+            }
+            x++;
+        }
+    </script>
+</body>
+</html>

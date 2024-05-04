@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="#" method="POST" onsubmit="return validateForm()">
+        <label for="rollNumber">Roll Number:</label><br>
+        <input type="text" id="rollNumber" name="rollNumber" required><br><br>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateRollNumber() {
+            let rollNumber = document.getElementById("rollNumber").value;
+            return /^\d{7}$/.test(rollNumber);
+        }
+
+        function validateName() {
+            let name = document.getElementById("name").value;
+            return /^[A-Za-z]+$/.test(name);
+        }
+
+        function validateDob() {
+            let dob = document.getElementById("dob").value;
+            return dob !== '';
+        }
+
+        function validateForm() {
+            if (!validateRollNumber()) {
+                alert("Roll number should be a 7-digit numeric value.");
+                return false;
+            }
+            if (!validateName()) {
+                alert("Name should be an alphabetical value.");
+                return false;
+            }
+            if (!validateDob()) {
+                alert("Date of Birth is required.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

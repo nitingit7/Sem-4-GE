@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Events with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2 id="content">Hello, World!</h2>
+    <button id="changeColorBtn">Change Text Color</button>
+    <button id="changeContentBtn">Change Content</button>
+
+    <script>
+        $(document).ready(function() {
+            // Change text color on button click
+            $("#changeColorBtn").click(function() {
+                $("#content").css("color", "red");
+            });
+
+            // Change text content on button click
+            $("#changeContentBtn").click(function() {
+                $("#content").text("New Content");
+            });
+        });
+    </script>
+</body>
+</html>
